@@ -1,2 +1,5 @@
-# uiverse-io-react-template
-Provides reactive UI desing environment for uiverse posts
+cd front-end
+
+npm i 
+
+npm run dev

@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @import url('https://fonts.cdnfonts.com/css/montserrat');
+  @font-face {
+    font-family: "Evolventa";
+    src: url("../assets/fonts/Evolventa-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Evolventa";
+    src: url("../assets/fonts/Evolventa-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  h1 {
+    @apply text-4xl font-bold;
+  }
+  h2 {
+    @apply text-3xl font-bold;
+  }
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  h4 {
+    @apply text-xl font-bold;
+  }
+  p {
+    //@apply
+  }
+  .not-selectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  //.primaryLight{
+  //  @apply bg-primary
+  //}
+  //.primaryDark{
+  //  @apply bg-primary-dark
+  //}
+}
+.transitionClass {
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+@layer components {
+  .appContainer {
+    width: 100%;
+    margin: auto;
+    padding: clamp(1rem, 5vw, 5rem);
+
+  }
+  .appOptions {
+    @apply bg-neutral-800 p-2 rounded-[8px] text-grayText flex justify-start gap-8 items-center flex-wrap
+  }
+  .appOption {
+    @apply flex md:flex-row md:items-center md:gap-4 xxs:flex-col xxs:items-start xxs:gap-0
+  }
+  .mockups {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    gap: 1rem;
+  }
+  input {
+    &:focus, &:enabled, &:active {
+      outline: none;
+      border: none;
+    }
+  }
+  .primaryLabel {
+    @apply ml-2
+  }
+  .primaryInput{
+    min-width: 0;
+    transition: 150ms;
+    &:focus {
+      border: solid 2px #208CFC;
+    }
+    &::placeholder{
+      font-weight: normal;
+    }
+    @apply px-8 py-4 bg-lightGray rounded-md text-xl min-h-[60px] w-full font-bold text-primaryText dark:text-primaryText-dark
+  }
+  .themeSwitch {
+    height: 20px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: #8b8b8b;
+  }
+    .themeSwitchKnob{
+      height: 20px;
+      width: 20px;
+      background-color: white;
+      border-radius: 20px;
+      &-left{
+        margin-right: auto;
+      }
+      &-right{
+        margin-left: auto;
+      }
+    }
+
+  .primaryButton {
+    @apply w-full bg-secondary px-8 py-3 text-white font-bold text-xl rounded-xl min-h-[60px]
+  }
+}
