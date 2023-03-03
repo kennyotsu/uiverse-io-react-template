@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vite --host --open",
+    "dev": "vite --host --open",
     "build": "tsc && vite build",
     "serve": "vite preview",
     "test": "vitest",
