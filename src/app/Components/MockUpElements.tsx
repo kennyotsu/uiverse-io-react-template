@@ -10,7 +10,7 @@ export function MockUpElements(props) {
 
   const Favorite = (props) => {
     return (
-      <div className={"z-[100] absolute left-[0] bottom-0 z-2 flex justify-center align-middle gap-2 bg-primary px-2 py-1 rounded-[8px]"}>
+      <div className={"pointer-events-none z-[100] absolute left-[0] bottom-0 z-2 flex justify-center align-middle gap-2 bg-primary px-2 py-1 rounded-[8px]"}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="24" height="24">
           <path fill='none' d="M0 0h24v24H0z"></path>
           {props.child}
@@ -22,7 +22,7 @@ export function MockUpElements(props) {
   }
   const GetHtmlCss = (props) => {
     return (
-      <div className={`text-[${color}] absolute inset-3 transition transition-[300ms] text-[15px]`}>
+      <div className={`pointer-events-none text-[${color}] absolute inset-3 transition transition-[300ms] text-[15px]`}>
         {props.children}
         <div className={"absolute right-0 bottom-0 z-2"}>
           Get <span className=" px-2 py-1 rounded bg-[#ff5858] text-primary">HTML</span> &amp; <span className="px-2 py-1 rounded bg-[#0071e2] text-primary">CSS</span>
@@ -32,7 +32,7 @@ export function MockUpElements(props) {
   }
   const FavoriteSmall = () => {
     return (
-        <div className={`text-[${color}] text-[1rem] absolute top-[10px] right-[10px] cursor-pointer flex align-middle text-[15px] opacity-70 pt-[3px] pr-[6px] pb-[3px] pl-[4px] rounded-[8px]`}>
+        <div className={`pointer-events-none text-[${color}] text-[1rem] absolute top-[10px] right-[10px] cursor-pointer flex align-middle text-[15px] opacity-70 pt-[3px] pr-[6px] pb-[3px] pl-[4px] rounded-[8px]`}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 24" width="24" height="24">
             <path fill='none' d="M0 0h24v24H0z"></path>
             <path fill={`${color}`} d="M5 2h14a1 1 0 0 1 1 1v19.143a.5.5 0 0 1-.766.424L12 18.03l-7.234 4.536A.5.5 0 0 1 4 22.143V3a1 1 0 0 1 1-1zm13 2H6v15.432l6-3.761 6 3.761V4z"></path>
@@ -43,7 +43,7 @@ export function MockUpElements(props) {
   }
   const VoteFor = () => {
     return (
-      <div className={`text-[${color}] text-[1rem] absolute top-[10px] right-[4px] cursor-pointer flex align-middle text-[15px] opacity-100 pt-[3px] pr-[6px] pb-[3px] pl-[4px] rounded-[8px]`}>
+      <div className={`pointer-events-none text-[${color}] text-[1rem] absolute top-[10px] right-[4px] cursor-pointer flex align-middle text-[15px] opacity-100 pt-[3px] pr-[6px] pb-[3px] pl-[4px] rounded-[8px]`}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
           <path fill="none" d="M0 0h24v24H0z"></path>
           <path fill="currentColor" d="M17 15.245v6.872a.5.5 0 0 1-.757.429L12 20l-4.243 2.546a.5.5 0 0 1-.757-.43v-6.87a8 8 0 1 1 10 0zm-8 1.173v3.05l3-1.8 3 1.8v-3.05A7.978 7.978 0 0 1 12 17a7.978 7.978 0 0 1-3-.582zM12 15a6 6 0 1 0 0-12 6 6 0 0 0 0 12z"></path></svg>
