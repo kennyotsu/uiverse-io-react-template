@@ -4,3 +4,7 @@
   background: lightgrey;
   border-radius: 8px;
 }
+/*TEST*/
+.card:hover {
+  background-color: red;
+}
